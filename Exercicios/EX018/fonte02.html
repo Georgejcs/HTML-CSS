@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "santana";
+            src: url("fontes/Santana.otf") format("opentype"), url("fontes/Santana.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            /*
+             -open type (otf)
+             -true type (ttf)
+             -embedded-opentype
+             -truetype-aat (Apple -advanced typhography)
+             -svg
+             */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: santana, Times, serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda delectus nesciunt saepe omnis odio error,
+        quis maxime inventore architecto beatae ipsum odit eaque! Repellat laborum officia rerum asperiores animi!
+        Molestias!</p>
+</body>
+
+</html>

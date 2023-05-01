@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  seletores personalizados
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = clilder
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            font-size: bold;
+        }
+        
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+         }
+        
+        a:active { 
+            color: yellow;
+        }
+
+        a::after {
+            content: "[link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://betteranime.net/anime/dublado/bungou-stray-dogs-2nd-season-dublado/episodio-02">Repositório GitHub</a></li>
+        <li><a href="https://www.google.com/search?client=opera-gx&q=Darker+Than+Black&sourceid=opera&ie=UTF-8&oe=UTF-8">Canal do Youtube</a></li>
+        <li><a href="https://www.amazon.com.br/gp/product/8535932070/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=narrativando-20&creative=9325&linkCode=as2&creativeASIN=8535932070&linkId=1943ed2d0def0d2962314ff3ebcfb78b">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>
